@@ -1,0 +1,15 @@
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\bin\Debug\modBusParse.exe.config
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\bin\Debug\modBusParse.exe
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\bin\Debug\modBusParse.pdb
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.csprojAssemblyReference.cache
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\MainWindow.g.cs
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\App.g.cs
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse_MarkupCompile.cache
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse_MarkupCompile.lref
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\MainWindow.baml
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.g.resources
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.Properties.Resources.resources
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.csproj.GenerateResource.cache
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.csproj.CoreCompileInputs.cache
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.exe
+G:\gitwork\PASOIBwin\modBusParse\modBusParse\obj\Debug\modBusParse.pdb

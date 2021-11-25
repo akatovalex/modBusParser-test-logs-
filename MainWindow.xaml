@@ -1,0 +1,32 @@
+﻿<Window x:Class="modBusParse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:modBusParse"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="713*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="modbus_logo_png" Grid.Column="1" Margin="311,294,10,0" Source="modbus_logo.png" Stretch="Fill"/>
+
+        <TextBox x:Name="TxtFile" HorizontalAlignment="Left" Height="18" Margin="73,58,0,0" TextWrapping="Wrap" Text="FilePath&#xA;" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <Button x:Name="BtnFileOpen" Content="Browse file" HorizontalAlignment="Left" Margin="95,81,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click" Grid.Column="1"/>
+        <Grid Margin="481,89,147,256" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="86*"/>
+                <RowDefinition Height="27*"/>
+            </Grid.RowDefinitions>
+            <RadioButton x:Name="rb_JSON" Content="JSON" HorizontalAlignment="Left" Checked="Rb_JSON_Checked" IsChecked="True" Margin="0,0,0,41"/>
+            <RadioButton x:Name="rb_XML" Content="XML" HorizontalAlignment="Left" Margin="0,20,0,21" Checked="Rb_XML_Checked" IsChecked="True"/>
+            <RadioButton x:Name="rb_TXT" Content="TXT" Margin="0,40,46,1" Checked="Rb_TXT_Checked" IsChecked="True"/>
+
+        </Grid>
+        <Label x:Name="label" Content="Choose output format" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="481,58,0,0" Width="127"/>
+        <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="481,168,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
