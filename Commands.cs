@@ -8,13 +8,24 @@ using System.IO;
 namespace modBusParse {
     class Commands {
 
+        private Dictionary <string, string> command;
+
         public Commands(string commandsFilePath) {
-            Dictionary<string, string> b = new Dictionary<string, string>();
+            LoadCommands(commandsFilePath);
+        }
+
+        private void LoadCommands(string commandsFilePath) {
+            command = new Dictionary<string, string>();
 
             string[] fs = File.ReadAllLines(commandsFilePath);
-            foreach(string inputLine in fs) {
+            foreach (string inputLine in fs) {
                 var formatInput = inputLine.Trim().Split('-');
-                b.Add(formatInput[0].Trim(), formatInput[1].Trim());
+                command.Add(formatInput[0].Trim(), formatInput[1].Trim());
+            }
+        }
+        public Dictionary<string, string> Command {
+            get {
+                return command;
             }
         }
     }
