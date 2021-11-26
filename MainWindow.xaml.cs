@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
+using System.IO;
 
 
 namespace modBusParse {
@@ -25,6 +26,12 @@ namespace modBusParse {
 
         public MainWindow() {
             InitializeComponent();
+
+            Commands commands = new Commands(@"dictionaries\commands.vcb");
+            MBExceptions exceptions = new MBExceptions(@"dictionaries\exceptions.vcb");
+
+
+            //TxtFile.Text = commands.Command["44"];
         }
 
 
@@ -64,15 +71,15 @@ namespace modBusParse {
         private void Btn_CreateLog_Click(object sender, RoutedEventArgs e) {
             switch (this.outputFormat) {
                 case 0: {
-
+                    File.Create(@"output.json");
                     break;
                 }
                 case 1: {
-
+                    File.Create(@"output.xml");
                     break;
                 }
                 default: {
-
+                    File.Create(@"output.txt");
                     break;
                 }
             }
@@ -81,15 +88,15 @@ namespace modBusParse {
         private void Btn_CreateLogFromRawData_Click(object sender, RoutedEventArgs e) {
             switch (this.outputFormat) {
                 case 0: {
-
+                    File.Create(@"output.json");
                     break;
                 }
                 case 1: {
-
+                    File.Create(@"output.xml");
                     break;
                 }
                 default: {
-
+                    File.Create(@"output.txt");
                     break;
                 }
             }
