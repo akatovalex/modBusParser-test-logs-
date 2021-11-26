@@ -89,6 +89,12 @@ namespace modBusParse {
             switch (this.outputFormat) {
                 case 0: {
                     File.Create(@"output.json");
+
+                    //последние два байта записаны в обратном порядке, при нахождении контрольной суммы вместе с ними выходит 0x0
+                    //byte[] b = { 0xFE, 0x46, 0x00, 0x3B, 0x01, 0xCA, 0x6C };
+                    //byte[] b = { 0x68, 0x46, 0x02, 0x03, 0x12, 0x71, 0xBC };
+                    //byte[] b = { 0x68, 0x04, 0x00, 0x10, 0x00, 0x10, 0xF9, 0x3A };
+                    //TxtFile.Text = string.Format("0x{0:X}", CheckSum.CRC16(b, 8));
                     break;
                 }
                 case 1: {
