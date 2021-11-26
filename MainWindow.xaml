@@ -5,28 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:modBusParse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Data converter" Height="450" Width="800" MinWidth="800" MinHeight="450" MaxWidth="800" MaxHeight="450" ResizeMode="CanMinimize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="79*"/>
-            <ColumnDefinition Width="713*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="157*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="modbus_logo_png" Grid.Column="1" Margin="311,294,10,0" Source="modbus_logo.png" Stretch="Fill"/>
+        <Image x:Name="modbus_logo_png" Margin="276,360,10,0" Source="modbus_logo.png" Stretch="Fill" Grid.Column="1"/>
 
-        <TextBox x:Name="TxtFile" HorizontalAlignment="Left" Height="18" Margin="73,58,0,0" TextWrapping="Wrap" Text="FilePath&#xA;" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
-        <Button x:Name="BtnFileOpen" Content="Browse file" HorizontalAlignment="Left" Margin="95,81,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click" Grid.Column="1"/>
-        <Grid Margin="481,89,147,256" Grid.Column="1">
+        <TextBox x:Name="TxtFile" HorizontalAlignment="Left" Height="128" Margin="34,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" TextChanged="TxtFile_TextChanged"/>
+        <Button x:Name="BtnFileOpen" Content="Browse" HorizontalAlignment="Left" Margin="44,294,0,0" VerticalAlignment="Top" Width="108" Click="BtnFileOpen_Click" RenderTransformOrigin="0.009,0.75"/>
+        <Grid Margin="177,114,166,226" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="86*"/>
                 <RowDefinition Height="27*"/>
             </Grid.RowDefinitions>
             <RadioButton x:Name="rb_JSON" Content="JSON" HorizontalAlignment="Left" Checked="Rb_JSON_Checked" IsChecked="True" Margin="0,0,0,41"/>
-            <RadioButton x:Name="rb_XML" Content="XML" HorizontalAlignment="Left" Margin="0,20,0,21" Checked="Rb_XML_Checked" IsChecked="True"/>
-            <RadioButton x:Name="rb_TXT" Content="TXT" Margin="0,40,46,1" Checked="Rb_TXT_Checked" IsChecked="True"/>
+            <RadioButton x:Name="rb_XML" Content="XML" HorizontalAlignment="Left" Margin="0,20,0,21" Checked="Rb_XML_Checked"/>
+            <RadioButton x:Name="rb_TXT" Content="TXT" Margin="0,40,46,1" Checked="Rb_TXT_Checked"/>
 
         </Grid>
-        <Label x:Name="label" Content="Choose output format" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="481,58,0,0" Width="127"/>
-        <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="481,168,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="Choose output format" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,82,0,0" Width="128" Grid.Column="1"/>
+        <Button x:Name="btn_CreateLog" Content="Create log from file" HorizontalAlignment="Left" Margin="49,212,0,0" VerticalAlignment="Top" Width="164" Grid.Column="1" Click="Btn_CreateLog_Click" IsEnabled="False"/>
+        <Label x:Name="label_FilePath" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,335,0,0" Width="465" Height="64" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_dataField" Content="Raw data input:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,82,0,0" Width="128"/>
+        <Label x:Name="label_browseFile" Content="Browse log files" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,268,0,0" Width="173"/>
+        <Button x:Name="btn_CreateLogFromRawData" Content="Create log from raw data" Grid.Column="1" HorizontalAlignment="Left" Margin="233,212,0,0" VerticalAlignment="Top" Width="190" Click="Btn_CreateLogFromRawData_Click" IsEnabled="False"/>
 
     </Grid>
 </Window>
