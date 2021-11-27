@@ -8,15 +8,15 @@ namespace modBusParse {
     public class Source {
         private string address;
         private string speed;
-        List<Line> line;
+        List<Line> lineList;
 
         public Source() {
             Speed = "Unknown";
-            line = new List<Line>();
+            lineList = new List<Line>();
         }
 
         public string Address {
-            get { return address;  }
+            get { return address; }
             set {
                 address = value;
             }
@@ -29,7 +29,12 @@ namespace modBusParse {
             }
         }
 
+        public List<Line> LineList {
+            get { return lineList; }
+            set { lineList = value; }
 
+
+        }
     }
 
     public class Line {
@@ -52,7 +57,7 @@ namespace modBusParse {
             get { return rawFrame; }
             set {
                 rawFrame = value;
-                }
+            }
         }
 
         public byte[] RawData {
@@ -89,7 +94,11 @@ namespace modBusParse {
         public string Error {
             get { return error; }
             set {
-                error = value;
+                if (value != "SUCCESS") {
+                    error = value;
+                } else {
+                    error = "";
+                }
             }
         }
         public string Exception {
