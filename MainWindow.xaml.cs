@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.IO;
+using System.Xml;
 
 
 namespace modBusParse {
@@ -22,13 +23,15 @@ namespace modBusParse {
     /// </summary>
     public partial class MainWindow : Window {
 
-        int outputFormat;
+        string outputFormat;
+        private Commands commands;
+        private MBExceptions exceptions;
 
         public MainWindow() {
             InitializeComponent();
 
-            Commands commands = new Commands(@"dictionaries\commands.vcb");
-            MBExceptions exceptions = new MBExceptions(@"dictionaries\exceptions.vcb");
+            commands = new Commands(@"dictionaries\commands.vcb");
+            exceptions = new MBExceptions(@"dictionaries\exceptions.vcb");
             //Source source = new Source();
             
 
@@ -58,64 +61,24 @@ namespace modBusParse {
         }
 
         private void Rb_JSON_Checked(object sender, RoutedEventArgs e) {
-            outputFormat = 0;
+            outputFormat = ".json";
         }
 
         private void Rb_XML_Checked(object sender, RoutedEventArgs e) {
-            outputFormat = 1;
+            outputFormat = ".xml";
         }
 
         private void Rb_TXT_Checked(object sender, RoutedEventArgs e) {
-            outputFormat = 2;
+            outputFormat = ".txt";
         }
 
         private void Btn_CreateLog_Click(object sender, RoutedEventArgs e) {
-            switch (this.outputFormat) {
-                case 0: {
-                    //JSON
-                    string abc = MBParse.Parse(File.ReadAllText(label_FilePath.Content.ToString()));
-
-                    File.WriteAllText(@"output.txt", abc);
-                    break;
-                }
-                case 1: {
-                    //File.Create(@"output.xml");
-                    break;
-                }
-                default: {
-                    //File.Create(@"output.txt");
-                    break;
-                }
-            }
+            string abc = MBParse.Parse(File.ReadAllText(label_FilePath.Content.ToString()), this.exceptions, this.commands, this.outputFormat);
+            File.WriteAllText(@"output" + this.outputFormat, abc);
         }
 
         private void Btn_CreateLogFromRawData_Click(object sender, RoutedEventArgs e) {
-            switch (this.outputFormat) {
-                case 0: {
 
-
-
-                    //File.Create(@"output.json");
-
-                    //последние два байта записаны в обратном порядке, при нахождении контрольной суммы вместе с ними выходит 0x0
-                    //byte[] b = { 0xFE, 0x46, 0x00, 0x3B, 0x01, 0xCA, 0x6C };              - обратный      (0)
-                    //byte[] b = { 0x68, 0x46, 0x02, 0x03, 0x12, 0x71, 0xBC };              - обратный      (0)
-                    //byte[] b = { 0x68, 0x04, 0x00, 0x10, 0x00, 0x10, 0xF9, 0x3A };        - обратный      (0)
-                    //byte[] b = { 0x68, 0x04, 0x04, 0x0E, 0x08, 0x0F, 0x10 };              - обратный      КС = (0x85, 0x94) - тест без неё
-                    //byte[] b = { 0x68, 0x03, 0x00, 0x02, 0xFF, 0xFF};           //          - верный ответ в ОБЫЧНОМ порядке 0x83, 0xEC
-                    //byte[] b = { 0x68, 0x03, 0x00, 0xFF, 0xFF, 0xFF, 0x02, 0xFF, 0xFF, 0x83, 0xEC };
-                    //TxtFile.Text = string.Format("0x{0:X}", CheckSum.CRC16(b, b.Length));
-                    break;
-                }
-                case 1: {
-                    //File.Create(@"output.xml");
-                    break;
-                }
-                default: {
-                    //File.Create(@"output.txt");
-                    break;
-                }
-            }
         }
 
 

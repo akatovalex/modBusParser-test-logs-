@@ -1,84 +1,405 @@
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 00 10 51 4D 
-Serial3 SUCCESS Length 21: 68 46 10 00 01 0E 08 0F 10 87 32 00 32 00 19 FF FF FF FF C5 41 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 10 10 5C 8D 
-Serial3 SUCCESS Length 21: 68 46 10 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF E0 A5 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 20 10 48 8D 
-Serial3 SUCCESS Length 21: 68 46 10 FF A0 FF FF FF FF FF FF 0F 00 FF FF FF FF FF FF FF D6 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 30 10 45 4D 
-Serial3 SUCCESS Length 21: 68 46 10 FF FF FF FF FF FF FF FF FF FF FF 68 00 FF FF FF A5 6C 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 40 10 60 8D 
-Serial3 SUCCESS Length 21: 68 46 10 FF FF 03 B3 03 08 08 F9 FF FF FF FF 00 0E FF FF 47 6D 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 50 10 6D 4D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 75 30 00 00 C3 50 00 0A 00 14 00 32 FF FF A6 DC 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 60 10 79 4D 
-Serial3 SUCCESS Length 21: 68 46 10 30 D4 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 9E 1E 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 70 10 74 8D 
-Serial3 SUCCESS Length 21: 68 46 10 30 D4 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 9E 1E 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 80 10 30 8D 
-Serial3 SUCCESS Length 21: 68 46 10 30 D4 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 9E 1E 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 90 10 3D 4D 
-Serial3 SUCCESS Length 21: 68 46 10 30 D4 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 9E 1E 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 A0 10 29 4D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 5E 55 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 B0 10 24 8D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 5E 55 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 C0 10 01 4D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 5E 55 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 D0 10 0C 8D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF 5E 55 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 E0 10 18 8D 
-Serial3 SUCCESS Length 21: 68 46 10 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF F5 54 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 7: 68 46 00 F0 10 15 4D 
-Serial3 SUCCESS Length 21: 68 46 10 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF E0 A5 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 8: 68 04 00 1E 00 07 D8 F7 
-Serial3 SUCCESS Length 19: 68 04 0E 00 00 00 1D 00 00 00 00 00 00 00 00 00 00 3C 07 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 8: 68 04 00 27 00 02 C8 F9 
-Serial3 SUCCESS Length 9: 68 04 04 00 00 00 1A 83 49 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 8: 68 04 00 2B 00 02 08 FA 
-Serial3 SUCCESS Length 9: 68 04 04 00 03 00 1B B2 89 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 8: 68 04 00 2F 00 01 09 3A 
-Serial3 SUCCESS Length 7: 68 04 02 00 02 64 F8 
-Serial3 TIMEOUT Length 0: 
-Serial3 TIMEOUT Length 0: 
-Serial3 SUCCESS Length 8: 68 03 00 02 00 02 6C F2 
-Serial3 SUCCESS Length 9: 68 03 04 54 09 4F C3 B7 66 
-Serial3 TIMEOUT Length 0: 
+[
+  {
+    "Speed": "Unknown",
+    "LineList": []
+  },
+  {
+    "Address": "Serial0",
+    "Speed": "Unknown",
+    "LineList": [
+      {
+        "RawFrame": "/kYAOwHKbA==",
+        "RawData": "ADsB",
+        "CRC": "6CCA"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "/kYAOwHKbA==",
+        "RawData": "ADsB",
+        "CRC": "6CCA"
+      },
+      {
+        "Error": "Timeout"
+      }
+    ]
+  },
+  {
+    "Address": "Serial3",
+    "Speed": "Unknown",
+    "LineList": [
+      {
+        "RawFrame": "aEYBagKuIA==",
+        "RawData": "AWoC",
+        "CRC": "20AE"
+      },
+      {},
+      {
+        "RawFrame": "RgIDEnG8",
+        "RawData": "AxI=",
+        "CRC": "5134"
+      },
+      {
+        "RawFrame": "aAQAEAAQ+To=",
+        "RawData": "ABAAEA==",
+        "CRC": "3AF9"
+      },
+      {},
+      {
+        "RawFrame": "BCAAAAAAAAAAAAAEAC4ALAAAAQIAcgAyABkAFwAWAA==",
+        "RawData": "AAAAAAAAAAAABAAuACwAAAECAHIAMgAZABcA",
+        "CRC": "ED6A"
+      },
+      {},
+      {},
+      {
+        "RawFrame": "aAQAMAACeP0=",
+        "RawData": "ADAAAg==",
+        "CRC": "FD78"
+      },
+      {},
+      {
+        "RawFrame": "BAQOCA8QhZQ=",
+        "RawData": "DggPEA==",
+        "CRC": "4977"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAABBRTQ==",
+        "RawData": "AAAQ",
+        "CRC": "4D51"
+      },
+      {
+        "RawFrame": "aEYQAAEOCA8QhzIAMgAZ/////8VB",
+        "RawData": "EAABDggPEIcyADIAGf////8=",
+        "CRC": "41C5"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAEBBcjQ==",
+        "RawData": "ABAQ",
+        "CRC": "8D5C"
+      },
+      {
+        "RawFrame": "aEYQ/////////////////////+Cl",
+        "RawData": "EP////////////////////8=",
+        "CRC": "A5E0"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAIBBIjQ==",
+        "RawData": "ACAQ",
+        "CRC": "8D48"
+      },
+      {
+        "RawFrame": "aEYQ/6D///////8PAP/////////W",
+        "RawData": "EP+g////////DwD///////8=",
+        "CRC": "D6FF"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAMBBFTQ==",
+        "RawData": "ADAQ",
+        "CRC": "4D45"
+      },
+      {
+        "RawFrame": "aEYQ//////////////9oAP///6Vs",
+        "RawData": "EP//////////////aAD///8=",
+        "CRC": "6CA5"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAQBBgjQ==",
+        "RawData": "AEAQ",
+        "CRC": "8D60"
+      },
+      {
+        "RawFrame": "aEYQ//8DswMICPn/////AA7//0dt",
+        "RawData": "EP//A7MDCAj5/////wAO//8=",
+        "CRC": "6D47"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAUBBtTQ==",
+        "RawData": "AFAQ",
+        "CRC": "4D6D"
+      },
+      {
+        "RawFrame": "aEYQAAB1MAAAw1AACgAUADL//6bc",
+        "RawData": "EAAAdTAAAMNQAAoAFAAy//8=",
+        "CRC": "DCA6"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAYBB5TQ==",
+        "RawData": "AGAQ",
+        "CRC": "4D79"
+      },
+      {
+        "RawFrame": "aEYQMNT//////////////////54e",
+        "RawData": "EDDU//////////////////8=",
+        "CRC": "1E9E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAcBB0jQ==",
+        "RawData": "AHAQ",
+        "CRC": "8D74"
+      },
+      {
+        "RawFrame": "aEYQMNT//////////////////54e",
+        "RawData": "EDDU//////////////////8=",
+        "CRC": "1E9E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAgBAwjQ==",
+        "RawData": "AIAQ",
+        "CRC": "8D30"
+      },
+      {
+        "RawFrame": "aEYQMNT//////////////////54e",
+        "RawData": "EDDU//////////////////8=",
+        "CRC": "1E9E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAkBA9TQ==",
+        "RawData": "AJAQ",
+        "CRC": "4D3D"
+      },
+      {
+        "RawFrame": "aEYQMNT//////////////////54e",
+        "RawData": "EDDU//////////////////8=",
+        "CRC": "1E9E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAoBApTQ==",
+        "RawData": "AKAQ",
+        "CRC": "4D29"
+      },
+      {
+        "RawFrame": "aEYQAAD//////////////////15V",
+        "RawData": "EAAA//////////////////8=",
+        "CRC": "555E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAsBAkjQ==",
+        "RawData": "ALAQ",
+        "CRC": "8D24"
+      },
+      {
+        "RawFrame": "aEYQAAD//////////////////15V",
+        "RawData": "EAAA//////////////////8=",
+        "CRC": "555E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYAwBABTQ==",
+        "RawData": "AMAQ",
+        "CRC": "4D01"
+      },
+      {
+        "RawFrame": "aEYQAAD//////////////////15V",
+        "RawData": "EAAA//////////////////8=",
+        "CRC": "555E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYA0BAMjQ==",
+        "RawData": "ANAQ",
+        "CRC": "8D0C"
+      },
+      {
+        "RawFrame": "aEYQAAD//////////////////15V",
+        "RawData": "EAAA//////////////////8=",
+        "CRC": "555E"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYA4BAYjQ==",
+        "RawData": "AOAQ",
+        "CRC": "8D18"
+      },
+      {
+        "RawFrame": "aEYQAAAAAP////////////////VU",
+        "RawData": "EAAAAAD///////////////8=",
+        "CRC": "54F5"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aEYA8BAVTQ==",
+        "RawData": "APAQ",
+        "CRC": "4D15"
+      },
+      {
+        "RawFrame": "aEYQ/////////////////////+Cl",
+        "RawData": "EP////////////////////8=",
+        "CRC": "A5E0"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aAQAHgAH2Pc=",
+        "RawData": "AB4ABw==",
+        "CRC": "F7D8"
+      },
+      {
+        "RawFrame": "aAQOAAAAHQAAAAAAAAAAAAA8Bw==",
+        "RawData": "DgAAAB0AAAAAAAAAAAAA",
+        "CRC": "73C"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aAQAJwACyPk=",
+        "RawData": "ACcAAg==",
+        "CRC": "F9C8"
+      },
+      {
+        "RawFrame": "aAQEAAAAGoNJ",
+        "RawData": "BAAAABo=",
+        "CRC": "4983"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aAQAKwACCPo=",
+        "RawData": "ACsAAg==",
+        "CRC": "FA08"
+      },
+      {
+        "RawFrame": "aAQEAAMAG7KJ",
+        "RawData": "BAADABs=",
+        "CRC": "89B2"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aAQALwABCTo=",
+        "RawData": "AC8AAQ==",
+        "CRC": "3A09"
+      },
+      {
+        "RawFrame": "aAQCAAJk+A==",
+        "RawData": "AgAC",
+        "CRC": "F864"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "Error": "Timeout"
+      },
+      {
+        "RawFrame": "aAMAAgACbPI=",
+        "RawData": "AAIAAg==",
+        "CRC": "F26C"
+      },
+      {
+        "RawFrame": "aAMEVAlPw7dm",
+        "RawData": "BFQJT8M=",
+        "CRC": "66B7"
+      },
+      {
+        "Error": "Timeout"
+      }
+    ]
+  }
+]

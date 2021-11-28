@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SourceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sourceType>COM</sourceType>
+  <sources>
+    <Source Address="Serial0" Speed="Unknown">
+      <LineList>
+        <Line Direction="Unknown" CRC="6CCA">
+          <RawFrame>/kYAOwHKbA==</RawFrame>
+          <RawData>ADsB</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="6CCA">
+          <RawFrame>/kYAOwHKbA==</RawFrame>
+          <RawData>ADsB</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+      </LineList>
+    </Source>
+    <Source Address="Serial3" Speed="Unknown">
+      <LineList>
+        <Line Direction="Unknown" CRC="20AE">
+          <RawFrame>aEYBagKuIA==</RawFrame>
+          <RawData>AWoC</RawData>
+        </Line>
+        <Line Direction="Unknown" />
+        <Line Direction="Unknown" CRC="5134">
+          <RawFrame>RgIDEnG8</RawFrame>
+          <RawData>AxI=</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="3AF9">
+          <RawFrame>aAQAEAAQ+To=</RawFrame>
+          <RawData>ABAAEA==</RawData>
+        </Line>
+        <Line Direction="Unknown" />
+        <Line Direction="Unknown" CRC="ED6A">
+          <RawFrame>BCAAAAAAAAAAAAAEAC4ALAAAAQIAcgAyABkAFwAWAA==</RawFrame>
+          <RawData>AAAAAAAAAAAABAAuACwAAAECAHIAMgAZABcA</RawData>
+        </Line>
+        <Line Direction="Unknown" />
+        <Line Direction="Unknown" />
+        <Line Direction="Unknown" CRC="FD78">
+          <RawFrame>aAQAMAACeP0=</RawFrame>
+          <RawData>ADAAAg==</RawData>
+        </Line>
+        <Line Direction="Unknown" />
+        <Line Direction="Unknown" CRC="4977">
+          <RawFrame>BAQOCA8QhZQ=</RawFrame>
+          <RawData>DggPEA==</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D51">
+          <RawFrame>aEYAABBRTQ==</RawFrame>
+          <RawData>AAAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="41C5">
+          <RawFrame>aEYQAAEOCA8QhzIAMgAZ/////8VB</RawFrame>
+          <RawData>EAABDggPEIcyADIAGf////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D5C">
+          <RawFrame>aEYAEBBcjQ==</RawFrame>
+          <RawData>ABAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="A5E0">
+          <RawFrame>aEYQ/////////////////////+Cl</RawFrame>
+          <RawData>EP////////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D48">
+          <RawFrame>aEYAIBBIjQ==</RawFrame>
+          <RawData>ACAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="D6FF">
+          <RawFrame>aEYQ/6D///////8PAP/////////W</RawFrame>
+          <RawData>EP+g////////DwD///////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D45">
+          <RawFrame>aEYAMBBFTQ==</RawFrame>
+          <RawData>ADAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="6CA5">
+          <RawFrame>aEYQ//////////////9oAP///6Vs</RawFrame>
+          <RawData>EP//////////////aAD///8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D60">
+          <RawFrame>aEYAQBBgjQ==</RawFrame>
+          <RawData>AEAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="6D47">
+          <RawFrame>aEYQ//8DswMICPn/////AA7//0dt</RawFrame>
+          <RawData>EP//A7MDCAj5/////wAO//8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D6D">
+          <RawFrame>aEYAUBBtTQ==</RawFrame>
+          <RawData>AFAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="DCA6">
+          <RawFrame>aEYQAAB1MAAAw1AACgAUADL//6bc</RawFrame>
+          <RawData>EAAAdTAAAMNQAAoAFAAy//8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D79">
+          <RawFrame>aEYAYBB5TQ==</RawFrame>
+          <RawData>AGAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="1E9E">
+          <RawFrame>aEYQMNT//////////////////54e</RawFrame>
+          <RawData>EDDU//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D74">
+          <RawFrame>aEYAcBB0jQ==</RawFrame>
+          <RawData>AHAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="1E9E">
+          <RawFrame>aEYQMNT//////////////////54e</RawFrame>
+          <RawData>EDDU//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D30">
+          <RawFrame>aEYAgBAwjQ==</RawFrame>
+          <RawData>AIAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="1E9E">
+          <RawFrame>aEYQMNT//////////////////54e</RawFrame>
+          <RawData>EDDU//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D3D">
+          <RawFrame>aEYAkBA9TQ==</RawFrame>
+          <RawData>AJAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="1E9E">
+          <RawFrame>aEYQMNT//////////////////54e</RawFrame>
+          <RawData>EDDU//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D29">
+          <RawFrame>aEYAoBApTQ==</RawFrame>
+          <RawData>AKAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="555E">
+          <RawFrame>aEYQAAD//////////////////15V</RawFrame>
+          <RawData>EAAA//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D24">
+          <RawFrame>aEYAsBAkjQ==</RawFrame>
+          <RawData>ALAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="555E">
+          <RawFrame>aEYQAAD//////////////////15V</RawFrame>
+          <RawData>EAAA//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D01">
+          <RawFrame>aEYAwBABTQ==</RawFrame>
+          <RawData>AMAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="555E">
+          <RawFrame>aEYQAAD//////////////////15V</RawFrame>
+          <RawData>EAAA//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D0C">
+          <RawFrame>aEYA0BAMjQ==</RawFrame>
+          <RawData>ANAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="555E">
+          <RawFrame>aEYQAAD//////////////////15V</RawFrame>
+          <RawData>EAAA//////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="8D18">
+          <RawFrame>aEYA4BAYjQ==</RawFrame>
+          <RawData>AOAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="54F5">
+          <RawFrame>aEYQAAAAAP////////////////VU</RawFrame>
+          <RawData>EAAAAAD///////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="4D15">
+          <RawFrame>aEYA8BAVTQ==</RawFrame>
+          <RawData>APAQ</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="A5E0">
+          <RawFrame>aEYQ/////////////////////+Cl</RawFrame>
+          <RawData>EP////////////////////8=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="F7D8">
+          <RawFrame>aAQAHgAH2Pc=</RawFrame>
+          <RawData>AB4ABw==</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="73C">
+          <RawFrame>aAQOAAAAHQAAAAAAAAAAAAA8Bw==</RawFrame>
+          <RawData>DgAAAB0AAAAAAAAAAAAA</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="F9C8">
+          <RawFrame>aAQAJwACyPk=</RawFrame>
+          <RawData>ACcAAg==</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="4983">
+          <RawFrame>aAQEAAAAGoNJ</RawFrame>
+          <RawData>BAAAABo=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="FA08">
+          <RawFrame>aAQAKwACCPo=</RawFrame>
+          <RawData>ACsAAg==</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="89B2">
+          <RawFrame>aAQEAAMAG7KJ</RawFrame>
+          <RawData>BAADABs=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="3A09">
+          <RawFrame>aAQALwABCTo=</RawFrame>
+          <RawData>AC8AAQ==</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="F864">
+          <RawFrame>aAQCAAJk+A==</RawFrame>
+          <RawData>AgAC</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" Error="Timeout" />
+        <Line Direction="Unknown" CRC="F26C">
+          <RawFrame>aAMAAgACbPI=</RawFrame>
+          <RawData>AAIAAg==</RawData>
+        </Line>
+        <Line Direction="Unknown" CRC="66B7">
+          <RawFrame>aAMEVAlPw7dm</RawFrame>
+          <RawData>BFQJT8M=</RawData>
+        </Line>
+        <Line Direction="Unknown" Error="Timeout" />
+      </LineList>
+    </Source>
+  </sources>
+</SourceList>

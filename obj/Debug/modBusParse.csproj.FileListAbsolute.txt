@@ -28,3 +28,6 @@ G:\gitwork\modBusParse\modBusParse\obj\Debug\modBusParse.csproj.GenerateResource
 G:\gitwork\modBusParse\modBusParse\obj\Debug\modBusParse.csproj.CoreCompileInputs.cache
 G:\gitwork\modBusParse\modBusParse\obj\Debug\modBusParse.exe
 G:\gitwork\modBusParse\modBusParse\obj\Debug\modBusParse.pdb
+G:\gitwork\modBusParse\modBusParse\bin\Debug\Newtonsoft.Json.dll
+G:\gitwork\modBusParse\modBusParse\bin\Debug\Newtonsoft.Json.xml
+G:\gitwork\modBusParse\modBusParse\obj\Debug\modBusParse.csproj.CopyComplete
