@@ -12,7 +12,7 @@ namespace modBusParse {
             uint CRC = 0xFFFF;
 
             for (int i = 0; i < data_size; i++) {
-                CRC ^= (uint)data[i];
+                CRC ^= (uint)data[i];    
                 for (int k = 0; k < 8; k++) {
                     if ((CRC & 0x01) == 1) {
                         CRC >>= 1;

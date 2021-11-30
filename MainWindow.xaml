@@ -14,7 +14,7 @@
             <ColumnDefinition Width="107*"/>
             <ColumnDefinition Width="157*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="modbus_logo_png" Margin="276,360,10,0" Source="modbus_logo.png" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="modbus_logo_png" Margin="276,360,10,0" Source="background/modbus_logo.png" Stretch="Fill" Grid.Column="1"/>
 
         <TextBox x:Name="TxtFile" HorizontalAlignment="Left" Height="128" Margin="34,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" TextChanged="TxtFile_TextChanged"/>
         <Button x:Name="BtnFileOpen" Content="Browse" HorizontalAlignment="Left" Margin="44,294,0,0" VerticalAlignment="Top" Width="108" Click="BtnFileOpen_Click" RenderTransformOrigin="0.009,0.75"/>

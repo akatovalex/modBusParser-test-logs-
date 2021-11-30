@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace modBusParse {
     public class SourceList {
+
+        [Newtonsoft.Json.JsonProperty(PropertyName = "SourceType")]
         public string sourceType;
+
+        [Newtonsoft.Json.JsonProperty(PropertyName = "Sources")]
         public List<Source> sources;
         public SourceList() {
             sourceType = "COM";     //в логах отсутствует (подразумевается из address = serial...)
@@ -24,7 +28,8 @@ namespace modBusParse {
             Speed = "Unknown";  //в логах отсутствует
         }
 
-        [System.Xml.Serialization.XmlAttribute]
+        [System.Xml.Serialization.XmlAttribute(AttributeName = "address")]
+        [Newtonsoft.Json.JsonProperty(PropertyName = "address")]
         public string Address {
             get { return address; }
             set {
@@ -32,7 +37,8 @@ namespace modBusParse {
             }
         }
 
-        [System.Xml.Serialization.XmlAttribute]
+        [System.Xml.Serialization.XmlAttribute(AttributeName = "speed")]
+        [Newtonsoft.Json.JsonProperty(PropertyName = "speed")]
         public string Speed {
             get { return speed; }
             set {
@@ -41,8 +47,9 @@ namespace modBusParse {
         }
 
 
-        //При наличии этой строки логи xml больше похоже на xml в примере, т.к. LineList исчезает совсем (субъективно неудобней)
-        //[System.Xml.Serialization.XmlElement(ElementName ="Line")]
+        //При включении этой строки логи xml больше похоже на исходный пример xml, т.к. 
+        [System.Xml.Serialization.XmlElement(ElementName ="Line")]         //  LineList исчезает совсем
+
         [Newtonsoft.Json.JsonProperty(PropertyName = "Line")]
         public List<Line> LineList {
             get { return lineList; }
@@ -67,7 +74,6 @@ namespace modBusParse {
         private byte[] rawData;
 
         public Line() {
-            direction = "Unknown";
         }
 
 
@@ -75,7 +81,11 @@ namespace modBusParse {
         public string Direction {
             get { return direction; }
             set {
-                direction = value;
+                if (value == "IRP_MJ_WRITE") { direction = "Request"; }
+                else if (value == "IRP_MJ_READ") { direction = "Response"; }
+                else {
+                    direction = "Unknown";
+                }
             }
         }
 
@@ -109,6 +119,7 @@ namespace modBusParse {
             set {
                 if (value == "TIMEOUT") {
                     error = "Timeout";
+                    direction = "Response";
                 }
                 else if (value != "SUCCESS") {
                     error = value;
@@ -126,6 +137,10 @@ namespace modBusParse {
             }
         }
 
+
+        [System.Xml.Serialization.XmlElement(ElementName = "raw_frame", DataType = "hexBinary")]
+        [Newtonsoft.Json.JsonConverter(typeof(ByteArrayConverter))]
+        //[Newtonsoft.Json.JsonIgnore]
         public byte[] RawFrame {
             get { return rawFrame; }
             set {
@@ -133,15 +148,15 @@ namespace modBusParse {
             }
         }
 
+
+        [System.Xml.Serialization.XmlElement(ElementName = "raw_data", DataType = "hexBinary")]
+        [Newtonsoft.Json.JsonConverter(typeof(ByteArrayConverter))]
         public byte[] RawData {
             get { return rawData; }
             set {
                 rawData = value;
             }
         }
-
-
-
 
 
     }
