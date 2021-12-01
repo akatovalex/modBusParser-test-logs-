@@ -3,263 +3,271 @@
   <sourceType>COM</sourceType>
   <sources>
     <Source address="Serial0" speed="Unknown">
-      <Line Direction="Request" Address="FE" Command="46" CRC="6CCA">
+      <Line Direction="Request" Address="FE" Command="46:Read EEPROM" CRC="CA6C">
         <raw_frame>FE46003B01CA6C</raw_frame>
         <raw_data>003B01</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="FE" Command="46" CRC="6CCA">
+      <Line Direction="Request" Address="FE" Command="46:Read EEPROM" CRC="CA6C">
         <raw_frame>FE46003B01CA6C</raw_frame>
         <raw_data>003B01</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
     </Source>
     <Source address="Serial3" speed="Unknown">
-      <Line Direction="Request" Address="68" Command="46" CRC="20AE">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="AE20">
         <raw_frame>6846016A02AE20</raw_frame>
         <raw_data>016A02</raw_data>
       </Line>
-      <Line Direction="Response" />
-      <Line Direction="Response" Address="46" Command="02" CRC="5134">
+      <Line Direction="Response" Error="Wrong data packet's length (length cannot be less than 4 bytes): 1 bytes ">
+        <raw_frame>68</raw_frame>
+      </Line>
+      <Line Direction="Response" Address="46" Command="02:Unknown" Error="Wrong CRC" CRC="3451">
         <raw_frame>4602031271BC</raw_frame>
         <raw_data>0312</raw_data>
       </Line>
-      <Line Direction="Request" Address="68" Command="04" CRC="3AF9">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="F93A">
         <raw_frame>680400100010F93A</raw_frame>
         <raw_data>00100010</raw_data>
       </Line>
-      <Line Direction="Response" />
-      <Line Direction="Response" Address="04" Command="20" CRC="ED6A">
+      <Line Direction="Response" Error="Wrong data packet's length (length cannot be less than 4 bytes): 1 bytes ">
+        <raw_frame>68</raw_frame>
+      </Line>
+      <Line Direction="Response" Address="04" Command="20:Unknown" Error="Wrong CRC" CRC="6AED">
         <raw_frame>042000000000000000000004002E002C000001020072003200190017001600</raw_frame>
         <raw_data>00000000000000000004002E002C00000102007200320019001700</raw_data>
       </Line>
-      <Line Direction="Response" />
-      <Line Direction="Response" Address="00" Command="15" CRC="7FC0">
+      <Line Direction="Response" Error="Wrong data packet's length (length cannot be less than 4 bytes): 1 bytes ">
+        <raw_frame>00</raw_frame>
+      </Line>
+      <Line Direction="Response" Address="00" Command="15:Unknown" Error="Wrong CRC" CRC="C07F">
         <raw_frame>00151399</raw_frame>
         <raw_data></raw_data>
       </Line>
-      <Line Direction="Request" Address="68" Command="04" CRC="FD78">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="78FD">
         <raw_frame>68040030000278FD</raw_frame>
         <raw_data>00300002</raw_data>
       </Line>
-      <Line Direction="Response" />
-      <Line Direction="Response" Address="04" Command="04" CRC="4977">
+      <Line Direction="Response" Error="Wrong data packet's length (length cannot be less than 4 bytes): 1 bytes ">
+        <raw_frame>68</raw_frame>
+      </Line>
+      <Line Direction="Response" Address="04" Command="04:Read Input Registers" Error="Wrong CRC" CRC="7749">
         <raw_frame>04040E080F108594</raw_frame>
         <raw_data>0E080F10</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D51">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="514D">
         <raw_frame>6846000010514D</raw_frame>
         <raw_data>000010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="41C5">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="C541">
         <raw_frame>68461000010E080F10873200320019FFFFFFFFC541</raw_frame>
         <raw_data>1000010E080F10873200320019FFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D5C">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="5C8D">
         <raw_frame>68460010105C8D</raw_frame>
         <raw_data>001010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="A5E0">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="E0A5">
         <raw_frame>684610FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0A5</raw_frame>
         <raw_data>10FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D48">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="488D">
         <raw_frame>6846002010488D</raw_frame>
         <raw_data>002010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="D6FF">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="FFD6">
         <raw_frame>684610FFA0FFFFFFFFFFFF0F00FFFFFFFFFFFFFFD6</raw_frame>
         <raw_data>10FFA0FFFFFFFFFFFF0F00FFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D45">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="454D">
         <raw_frame>6846003010454D</raw_frame>
         <raw_data>003010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="6CA5">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="A56C">
         <raw_frame>684610FFFFFFFFFFFFFFFFFFFFFF6800FFFFFFA56C</raw_frame>
         <raw_data>10FFFFFFFFFFFFFFFFFFFFFF6800FFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D60">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="608D">
         <raw_frame>6846004010608D</raw_frame>
         <raw_data>004010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="6D47">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="476D">
         <raw_frame>684610FFFF03B3030808F9FFFFFFFF000EFFFF476D</raw_frame>
         <raw_data>10FFFF03B3030808F9FFFFFFFF000EFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D6D">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="6D4D">
         <raw_frame>68460050106D4D</raw_frame>
         <raw_data>005010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="DCA6">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="A6DC">
         <raw_frame>684610000075300000C350000A00140032FFFFA6DC</raw_frame>
         <raw_data>10000075300000C350000A00140032FFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D79">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="794D">
         <raw_frame>6846006010794D</raw_frame>
         <raw_data>006010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="1E9E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="9E1E">
         <raw_frame>68461030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF9E1E</raw_frame>
         <raw_data>1030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D74">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="748D">
         <raw_frame>6846007010748D</raw_frame>
         <raw_data>007010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="1E9E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="9E1E">
         <raw_frame>68461030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF9E1E</raw_frame>
         <raw_data>1030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D30">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="308D">
         <raw_frame>6846008010308D</raw_frame>
         <raw_data>008010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="1E9E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="9E1E">
         <raw_frame>68461030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF9E1E</raw_frame>
         <raw_data>1030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D3D">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="3D4D">
         <raw_frame>68460090103D4D</raw_frame>
         <raw_data>009010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="1E9E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="9E1E">
         <raw_frame>68461030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF9E1E</raw_frame>
         <raw_data>1030D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D29">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="294D">
         <raw_frame>684600A010294D</raw_frame>
         <raw_data>00A010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="555E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="5E55">
         <raw_frame>6846100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF5E55</raw_frame>
         <raw_data>100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D24">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="248D">
         <raw_frame>684600B010248D</raw_frame>
         <raw_data>00B010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="555E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="5E55">
         <raw_frame>6846100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF5E55</raw_frame>
         <raw_data>100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D01">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="014D">
         <raw_frame>684600C010014D</raw_frame>
         <raw_data>00C010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="555E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="5E55">
         <raw_frame>6846100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF5E55</raw_frame>
         <raw_data>100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D0C">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="0C8D">
         <raw_frame>684600D0100C8D</raw_frame>
         <raw_data>00D010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="555E">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="5E55">
         <raw_frame>6846100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF5E55</raw_frame>
         <raw_data>100000FFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="8D18">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="188D">
         <raw_frame>684600E010188D</raw_frame>
         <raw_data>00E010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="54F5">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="F554">
         <raw_frame>68461000000000FFFFFFFFFFFFFFFFFFFFFFFFF554</raw_frame>
         <raw_data>1000000000FFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="46" CRC="4D15">
+      <Line Direction="Request" Address="68" Command="46:Read EEPROM" CRC="154D">
         <raw_frame>684600F010154D</raw_frame>
         <raw_data>00F010</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="46" CRC="A5E0">
+      <Line Direction="Response" Address="68" Command="46:Read EEPROM" CRC="E0A5">
         <raw_frame>684610FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0A5</raw_frame>
         <raw_data>10FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="04" CRC="F7D8">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="D8F7">
         <raw_frame>6804001E0007D8F7</raw_frame>
         <raw_data>001E0007</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="04" CRC="73C">
+      <Line Direction="Response" Address="68" Command="04:Read Input Registers" CRC="3C07">
         <raw_frame>68040E0000001D000000000000000000003C07</raw_frame>
         <raw_data>0E0000001D00000000000000000000</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="04" CRC="F9C8">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="C8F9">
         <raw_frame>680400270002C8F9</raw_frame>
         <raw_data>00270002</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="04" CRC="4983">
+      <Line Direction="Response" Address="68" Command="04:Read Input Registers" CRC="8349">
         <raw_frame>6804040000001A8349</raw_frame>
         <raw_data>040000001A</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="04" CRC="FA08">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="08FA">
         <raw_frame>6804002B000208FA</raw_frame>
         <raw_data>002B0002</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="04" CRC="89B2">
+      <Line Direction="Response" Address="68" Command="04:Read Input Registers" CRC="B289">
         <raw_frame>6804040003001BB289</raw_frame>
         <raw_data>040003001B</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="04" CRC="3A09">
+      <Line Direction="Request" Address="68" Command="04:Read Input Registers" CRC="093A">
         <raw_frame>6804002F0001093A</raw_frame>
         <raw_data>002F0001</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="04" CRC="F864">
+      <Line Direction="Response" Address="68" Command="04:Read Input Registers" CRC="64F8">
         <raw_frame>680402000264F8</raw_frame>
         <raw_data>020002</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
       <Line Direction="Response" Error="Timeout" />
-      <Line Direction="Request" Address="68" Command="03" CRC="F26C">
+      <Line Direction="Request" Address="68" Command="03:Read Holding Registers" CRC="6CF2">
         <raw_frame>6803000200026CF2</raw_frame>
         <raw_data>00020002</raw_data>
       </Line>
-      <Line Direction="Response" Address="68" Command="03" CRC="66B7">
+      <Line Direction="Response" Address="68" Command="03:Read Holding Registers" CRC="B766">
         <raw_frame>68030454094FC3B766</raw_frame>
         <raw_data>0454094FC3</raw_data>
       </Line>
       <Line Direction="Response" Error="Timeout" />
     </Source>
     <Source address="SerialForTestingExceptions" speed="Unknown">
-      <Line Direction="Response" Address="68" Command="83" Exception="03" CRC="2DD1">
+      <Line Direction="Response" Address="68" Command="03:Read Holding Registers" Exception="03:Illegal data value" Error="Wrong CRC" CRC="D12D">
         <raw_frame>6883030E5E</raw_frame>
         <raw_data>03</raw_data>
       </Line>

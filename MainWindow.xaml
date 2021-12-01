@@ -15,10 +15,8 @@
             <ColumnDefinition Width="157*"/>
         </Grid.ColumnDefinitions>
         <Image x:Name="modbus_logo_png" Margin="276,360,10,0" Source="background/modbus_logo.png" Stretch="Fill" Grid.Column="1"/>
-
-        <TextBox x:Name="TxtFile" HorizontalAlignment="Left" Height="128" Margin="34,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" TextChanged="TxtFile_TextChanged"/>
-        <Button x:Name="BtnFileOpen" Content="Browse" HorizontalAlignment="Left" Margin="44,294,0,0" VerticalAlignment="Top" Width="108" Click="BtnFileOpen_Click" RenderTransformOrigin="0.009,0.75"/>
-        <Grid Margin="177,114,166,226" Grid.Column="1">
+        <Button x:Name="BtnFileOpen" Content="Browse" HorizontalAlignment="Left" Margin="47,336,0,0" VerticalAlignment="Top" Width="108" Click="BtnFileOpen_Click" RenderTransformOrigin="0.009,0.75"/>
+        <Grid Margin="276,106,67,234" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="86*"/>
                 <RowDefinition Height="27*"/>
@@ -28,12 +26,15 @@
             <RadioButton x:Name="rb_TXT" Content="TXT" Margin="0,40,46,1" Checked="Rb_TXT_Checked"/>
 
         </Grid>
-        <Label x:Name="label" Content="Choose output format" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,82,0,0" Width="128" Grid.Column="1"/>
-        <Button x:Name="btn_CreateLog" Content="Create log from file" HorizontalAlignment="Left" Margin="49,212,0,0" VerticalAlignment="Top" Width="164" Grid.Column="1" Click="Btn_CreateLog_Click" IsEnabled="False"/>
-        <Label x:Name="label_FilePath" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,335,0,0" Width="465" Height="64" Grid.ColumnSpan="2"/>
-        <Label x:Name="label_dataField" Content="Raw data input:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,82,0,0" Width="128"/>
-        <Label x:Name="label_browseFile" Content="Browse log files" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,268,0,0" Width="173"/>
-        <Button x:Name="btn_CreateLogFromRawData" Content="Create log from raw data" Grid.Column="1" HorizontalAlignment="Left" Margin="233,212,0,0" VerticalAlignment="Top" Width="190" Click="Btn_CreateLogFromRawData_Click" IsEnabled="False"/>
+        <Label x:Name="label" Content="Choose output format" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,74,0,0" Width="128" Grid.Column="1"/>
+        <Button x:Name="btn_CreateLog" Content="Create log from file" HorizontalAlignment="Left" Margin="260,187,0,0" VerticalAlignment="Top" Width="164" Grid.Column="1" Click="Btn_CreateLog_Click" IsEnabled="False"/>
+        <Label x:Name="label_FilePath" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,355,0,0" Width="465" Height="64" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_dataField" Content="Raw data input:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,43,0,0" Width="128"/>
+        <Label x:Name="label_browseFile" Content="Browse log files" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,310,0,0" Width="173"/>
+        <Button x:Name="btn_CreateLogFromRawData" Content="Create log from raw data" Grid.Column="1" HorizontalAlignment="Left" Margin="247,213,0,0" VerticalAlignment="Top" Width="190" Click="Btn_CreateLogFromRawData_Click" IsEnabled="False"/>
+        <RichTextBox x:Name="RichTextBoxData" HorizontalAlignment="Left" Height="236" Margin="34,74,0,0" VerticalAlignment="Top" Width="515" TextChanged="TxtFile_TextChanged" Grid.ColumnSpan="2">
+            <FlowDocument/>
+        </RichTextBox>
 
     </Grid>
 </Window>

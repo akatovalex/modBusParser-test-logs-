@@ -73,17 +73,26 @@ namespace modBusParse {
         }
 
         private void Btn_CreateLog_Click(object sender, RoutedEventArgs e) {
-            string abc = MBParse.Parse(File.ReadAllText(label_FilePath.Content.ToString()), this.exceptions, this.commands, this.outputFormat);
-            File.WriteAllText(@"output" + this.outputFormat, abc);
+            string resultLogs = MBParse.Parse(File.ReadAllText(label_FilePath.Content.ToString()), this.exceptions, this.commands, this.outputFormat);
+            string fileName = "output";
+            File.WriteAllText(fileName + this.outputFormat, resultLogs);
+            System.Windows.MessageBox.Show("File path: " + System.IO.Directory.GetCurrentDirectory() + "\\" + fileName + this.outputFormat
+                , "File added successfully", new System.Windows.MessageBoxButton());
         }
 
         private void Btn_CreateLogFromRawData_Click(object sender, RoutedEventArgs e) {
-
+            string resultLogs = MBParse.Parse(new TextRange(RichTextBoxData.Document.ContentStart, RichTextBoxData.Document.ContentEnd).Text
+                , this.exceptions, this.commands, this.outputFormat);
+            string fileName = "output";
+            File.WriteAllText(fileName + this.outputFormat, resultLogs);
+            System.Windows.MessageBox.Show("File path: " + System.IO.Directory.GetCurrentDirectory() + "\\" + fileName + this.outputFormat
+                ,"File added successfully",new System.Windows.MessageBoxButton());
         }
 
 
         private void TxtFile_TextChanged(object sender, TextChangedEventArgs e) {
-            if (TxtFile.Text != "") {
+
+            if (new TextRange(RichTextBoxData.Document.ContentStart, RichTextBoxData.Document.ContentEnd).Text.Length > 10) {
                 btn_CreateLogFromRawData.IsEnabled = true;
             }
             else {
