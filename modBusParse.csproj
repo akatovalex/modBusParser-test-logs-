@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>transition_conversion_convert_transfer_motion_icon_196300.ico</ApplicationIcon>
+    <ApplicationIcon>background\transition_conversion_convert_transfer_motion_icon_196300.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -117,10 +117,10 @@
     <Resource Include="background\modbus_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="background\transition_conversion_convert_transfer_motion_icon_196300.ico" />
+    <Resource Include="background\%281%29transition_conversion_convert_transfer_motion_icon_196300.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="transition_conversion_convert_transfer_motion_icon_196300.ico" />
+    <Resource Include="background\transition_conversion_convert_transfer_motion_icon_196300.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

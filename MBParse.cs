@@ -35,7 +35,8 @@ namespace modBusParse {
                 var words = line.Trim().Split(new[] { Delimiter }, 7, StringSplitOptions.RemoveEmptyEntries);
 
                 /*string lengthString;          // Можно использовать более сложные конструкции для парсинга данных, 
-                                                // однако для полноценных логов всё равно придётся вносить правки
+                                                // однако для полноценных логов всё равно придётся вносить правки,
+                                                // для входных примеров из папки input logs работает
                 string rwString;
                 string serial;
                 foreach (var word in words) {
@@ -116,10 +117,16 @@ namespace modBusParse {
                     }
 
                     newLine.Address = newLine.RawFrame[0].ToString("X2");
-                    newLine.Command =  newLine.RawFrame[1].ToString("X2");       // временный вывод байтов - поменять на команду
+
+                    string keyCommand = (newLine.RawFrame[1] % 128).ToString("X2");
+                    string command = "";
+                    if (!commands.Command.TryGetValue(keyCommand, out command)) {
+                        command = "Unknown";
+                    }
+                    newLine.Command = keyCommand + ":" + command;
+
                     if (newLine.RawFrame[1] >= 128) {
                         if (length == 5) {
-                            //newLine.Exception = newLine.RawFrame[2].ToString("X2"); // временный вывод байтов - поменять на сообщение об ошибке
                             string keyException = newLine.RawFrame[2].ToString("X2");
                             string exception = "";
                             if (!mBExceptions.MBException.TryGetValue(keyException, out exception)) {
@@ -130,12 +137,6 @@ namespace modBusParse {
                             newLine.Error = "Wrong exception packet's length (length cannot be more or less than 5 bytes): " + length + " bytes";
                         }
                     }
-                    string keyCommand = (newLine.RawFrame[1] % 128).ToString("X2");
-                    string command = "";
-                    if (!commands.Command.TryGetValue(keyCommand, out command)) {
-                        command = "Unknown";
-                    }
-                    newLine.Command = keyCommand + ":" + command;
                 }
                 else {
                     // пакет битый
@@ -156,16 +157,12 @@ namespace modBusParse {
             try {
                 var stringwriter = new System.IO.StringWriter();
                 var serializer = new System.Xml.Serialization.XmlSerializer(typeof(SourceList));
-                //XmlWriterSettings settings = new XmlWriterSettings();
-                //settings.Indent = true;
-                //settings.IndentChars = "    ";
                 serializer.Serialize(stringwriter, sourceList);
                 return stringwriter.ToString();
             }
             catch {
                 throw;
             }
-            //return null;
         }
 
         private static string CreateTXT(SourceList sourceList) {

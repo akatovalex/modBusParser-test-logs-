@@ -32,10 +32,6 @@ namespace modBusParse {
 
             commands = new Commands(@"dictionaries\commands.vcb");
             exceptions = new MBExceptions(@"dictionaries\exceptions.vcb");
-            //Source source = new Source();
-            
-
-            //TxtFile.Text = commands.Command["44"];
         }
 
 
