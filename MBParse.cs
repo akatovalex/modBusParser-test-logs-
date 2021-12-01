@@ -80,8 +80,10 @@ namespace modBusParse {
             if (outputFormat == ".json") {
                 output = CreateJSON(sourceList);
             }
-            else {
+            else if (outputFormat == ".xml") {
                 output = CreateXML(sourceList);
+            } else {
+                output = CreateTXT(sourceList);
             }
 
             return output;
@@ -164,6 +166,51 @@ namespace modBusParse {
                 throw;
             }
             //return null;
+        }
+
+        private static string CreateTXT(SourceList sourceList) {
+            string output = "";
+            string endl = System.Environment.NewLine;
+            output += "SourceType: "+ sourceList.sourceType + endl;
+            foreach (Source source in sourceList.sources) {
+                output += Tabs() + "Source: Address=" + source.Address + " Speed=" + source.Speed + endl;
+                foreach (Line line in source.LineList) {
+                    output += Tabs(2) + "Line: Direction=" + line.Direction;
+                    if (line.Address != null) { output += " Address=" + line.Address; }
+                    if (line.Command != null) { output += " Command=\"" + line.Command + "\""; }
+                    if (line.Exception != null) { output += " Exception=\"" + line.Exception + "\""; }
+                    if (line.Error != null) { output += " Error=\"" + line.Error + "\""; }
+                    if (line.CRC != null) { output += " CRC=" + line.CRC; }
+
+                    if (line.RawFrame != null) {
+                        output += "\n" + Tabs(3);
+                        output += "RawFrame:";
+                        foreach (var element in line.RawFrame) {
+                            output += " " + element.ToString("X2");
+                        }
+                    }
+
+                    if (line.RawData != null) {
+                        output += "\n" + Tabs(3);
+                        output += "RawData:";
+                        foreach (var element in line.RawData) {
+                            output += " " + element.ToString("X2");
+                        }
+                    }
+                    output += "\n";
+                }
+                output += "\n";
+            }
+
+            return output;
+        }
+
+        private static string Tabs(int N = 1) {
+            string result = "";
+            for (int i = 0; i < N; i++) {
+                result += "\t";
+            }
+            return result;
         }
 
     }
