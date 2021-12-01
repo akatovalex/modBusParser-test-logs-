@@ -110,7 +110,8 @@ namespace modBusParse {
         public string Exception {
             get { return exception; }
             set {
-                exception = value;
+                if (direction == "Response") { exception = value; }
+                else { exception = null; }
             }
         }
         [System.Xml.Serialization.XmlAttribute]

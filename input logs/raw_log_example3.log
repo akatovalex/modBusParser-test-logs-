@@ -15,9 +15,6 @@
 858	11:26:52	AppName	IRP_MJ_WRITE	Serial3	SUCCESS	Length 8: 68 04 00 30 00 02 78 FD 	
 859	11:26:52	AppName	IRP_MJ_READ	Serial3	SUCCESS	Length 1: 68 	
 864	11:26:52	AppName	IRP_MJ_READ	Serial3	SUCCESS	Length 8: 04 04 0E 08 0F 10 85 94
-
-869	11:26:52	AppName	IRP_MJ_READ	SerialForTestingExceptions	SUCCESS	Length 5: 68 83 03 0E 5E
-
 63	9:25:13	CO2_DevTool.exe	IRP_MJ_READ	Serial3	TIMEOUT	Length 0: 	
 
 66	9:25:13	CO2_DevTool.exe	IRP_MJ_WRITE	Serial3	SUCCESS	Length 7: 68 46 00 00 10 51 4D 	
@@ -103,3 +100,8 @@
 348	9:25:17	CO2_DevTool.exe	IRP_MJ_WRITE	Serial3	SUCCESS	Length 8: 68 03 00 02 00 02 6C F2 	
 349	9:25:17	CO2_DevTool.exe	IRP_MJ_READ	Serial3	SUCCESS	Length 9: 68 03 04 54 09 4F C3 B7 66 	
 352	9:25:17	CO2_DevTool.exe	IRP_MJ_READ	Serial3	TIMEOUT	Length 0: 	
+
+
+869	11:26:52	AppName	IRP_MJ_WRITE	SerialForTestingExceptions	SUCCESS	Length 5: 68 83 03 0E 5E
+
+869	11:26:52	AppName	IRP_MJ_READ	SerialForTestingExceptions	SUCCESS	Length 5: 68 83 03 0E 5E
